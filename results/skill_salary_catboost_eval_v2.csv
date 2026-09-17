@@ -1,0 +1,2 @@
+model,r2,rmse,mae,n_train,n_val,n_test
+catboost_full_vocab,0.3850216664841063,71232.23430655187,42059.295856908655,5187,1257,1516
