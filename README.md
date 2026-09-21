@@ -16,18 +16,8 @@ two parts:
 ```bash
 pip install -r requirements.txt
 ```
-This project uses two data collections (both gitignored — see "Data
-collection" below for how they were gathered):
-- `data/vacancies.parquet` (35,368 rows) — used by Part 1 (skill
-  prediction).
-- `data/hh_vacancies_cleaned_fixed_salary.parquet` (28,531 rows,
-  collected later) — used by Part 2 (skill combination value
-  calculator). Not a superset of the first file: kept the original's
-  salary-complete postings, dropped most incomplete ones, added ~11,900
-  new postings. Collected specifically for far better salary-field
-  completeness, which Part 2 needs and Part 1 never used.
 
-`models/` and trained-model backups are also gitignored — regenerate
+`models/` and trained-model backups are gitignored. You can regenerate
 them by running the scripts below.
 
 ## Part 1: Skill prediction
