@@ -1,0 +1,36 @@
+# data (never commit the parquet)
+data/
+*.parquet
+
+# generated artifacts
+models/
+configs/tuned_params.json
+# note: configs/top_skills.json is small and worth committing so the skill
+# list stays consistent for anyone else who clones this repo
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# secrets -- just in case
+*.pem
+.env
+*.token
+hh_token.json
+token.json
+
+# trained models (regeneratable, and Spark model dirs are large)
+models/
+models_backup_final_table/
+
+spark-tmp/
+
+# catboost's own auto-generated training log, regenerated every run
+catboost_info/
